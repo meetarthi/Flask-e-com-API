@@ -1,0 +1,21 @@
+name  ,barcode,brand,description,price,available,rating
+Product 1,347890,Brand 1,This is sample,111,TRUE,2
+Product 2,3522523,Brand 2,Test,222,FALSE,5
+Product 3,456789,Brand 3,sample,333,TRUE,3
+Product 4,576554,Brand 4,sample,444,TRUE,1
+Product 5,333643,Brand 5,sample,555,FALSE,4
+Product 6,346478,Brand 6,sample,666,TRUE,2
+Product 7,353661,Brand 7,sample,777,TRUE,3
+Product 8,466464,Brand 8,sample,888,FALSE,1
+Product 9,6437473,Brand 9,sample,999,FALSE,5
+Product 10,75473745,Brand 10,sample,1000,FALSE,4
+Product 11,447752,Brand 11,sample,1110,TRUE,1
+Product 12,54758433,Brand 12,sample,1220,TRUE,1
+Product 13,247547,Brand 13,sample,1330,TRUE,2
+Product 14,5452245,Brand 14,sample,1440,FALSE,4
+Product 15,53347,Brand 15,sample,1550,TRUE,5
+Product 16,347545,Brand 16,sample,1660,FALSE,4
+Product 17,5658453,Brand 17,sample,1770,TRUE,2
+Product 18,536346,Brand 18,sample,1880,TRUE,5
+Product 19,3532525,Brand 19,sample,1990,FALSE,1
+Product 20,53223,Brand 20,sample,2000,TRUE,3
