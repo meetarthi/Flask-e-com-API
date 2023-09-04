@@ -69,7 +69,7 @@ Front-end to upload product data by admin.
 ![image](https://github.com/meetarthi/marlo-assignment/assets/112666126/30a85e7a-96a1-4899-a637-a5f8b29ae305) 
 ------------ 
 
-4. **Update product rating**
+4. **Product Review API**
 
 GET method with parameters name and rating, to get name and rating from user.
 Updates the rating column in the products table based on the "name" column's value.
@@ -78,11 +78,17 @@ Updates the rating column in the products table based on the "name" column's val
 
 ![image](https://github.com/meetarthi/marlo-assignment/assets/112666126/d8d2c695-71da-4f73-99bf-d5cf1b997796)
 
-**After updating**
+**AFTER updating**
 
 ![image](https://github.com/meetarthi/marlo-assignment/assets/112666126/91f6090a-1cba-437b-b408-f2fe613829a6)
 ![image](https://github.com/meetarthi/marlo-assignment/assets/112666126/32cdfee1-1c56-4df0-b2ef-867f31d0eea2)
 
+------------
 
+5. **Product view Pagination API**
+
+GET method with a page_no parameter to specify the page number.
+Retrieve products from the 'products' table, ordering them by rating in descending order and implementing pagination
+Displays list of products for the requested page in JSON format.
 
 
