@@ -95,8 +95,14 @@ Retrieve products from the 'products' table, ordering them by rating in descendi
 
 Displays list of products for the requested page in JSON format.
 
+**page_no = 1**
+
 ![image](https://github.com/meetarthi/marlo-assignment/assets/112666126/87204b66-b778-4efe-a8f2-8dba5be509ee)
-![image](https://github.com/meetarthi/marlo-assignment/assets/112666126/b35563d4-bdce-4cc6-a348-feec6fe563da)
+
+**page_no = 5**
+
+![image](https://github.com/meetarthi/marlo-assignment/assets/112666126/8b2dbf21-7aef-438e-819e-c41fe2a0159f)
+
 
 
 
