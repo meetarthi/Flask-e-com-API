@@ -49,7 +49,7 @@ checks if the username is in the app_users table.
 
 Front-end to upload product data by admin.
 
-![image](https://github.com/meetarthi/marlo-assignment/assets/112666126/30a85e7a-96a1-4899-a637-a5f8b29ae305
+![image](https://github.com/meetarthi/marlo-assignment/assets/112666126/30a85e7a-96a1-4899-a637-a5f8b29ae305) 
 
 ------------
 
