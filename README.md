@@ -53,11 +53,16 @@ Front-end to upload product data by admin.
 
 ------------
 
-4. **Upload API**
-
-If the file is successfully uploaded, it will display 'done'.
+4. **Upload the product data**
+Using POST method, uploads the csv file, reads and converts to dataframe.
+Calls the **insert_pd_to_sql function** to insert the DataFrame data into the products table in the database and returns'done'.
 
 ![image](https://github.com/meetarthi/marlo-assignment/assets/112666126/793cdd75-5ff3-45b8-876d-ceb4f60fc71e)
 
+------------
+5.**Insert product data into table 'products'**
 
+**insert_pd_to_sql**  function inserts data from pandas dataframe into products table, iterates through each row of the dataframe and inserts into the table.
+
+------------
 
