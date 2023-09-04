@@ -19,10 +19,4 @@ Web application made using Flask serves as a e-com **API**.  This allows user to
 5. Create Table
 6. Create user for Admin access
 7. Grant Admin user all permission to the table.
-8. Import libraries in app.py
-9. Create Api for user registration and login.
-10. Create a helper front-end to upload product data.
-11. Create a Api for admin to upload the product data.
-12. Create a Api for inserting the product data into SQL table.
-13. Create a Api enabling user to give rating to products , and updating the rating in the database.
-14. Create a Api for Sorting products based on rating and pagination
+8. Develop API for user registration ,user login, uploading product data by admin, inserting the uploaded product data, enabling user to give rating, sorting review and pagination.
