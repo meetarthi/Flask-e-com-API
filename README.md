@@ -31,7 +31,7 @@ Api 'register' to get the details for registration from user, GET method with pa
 Inserts user information into the app_users table in a MySQL database
 ![image](https://github.com/meetarthi/marlo-assignment/assets/112666126/466f6451-aaaa-4e56-98ef-91da4d91b511)
 ![image](https://github.com/meetarthi/marlo-assignment/assets/112666126/ab740e36-ea6f-49cd-818c-ab4dff173ca2)
-
+------------
 2. **User Login**
    
 GET method with parameters username and password
