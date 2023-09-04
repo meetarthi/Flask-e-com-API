@@ -75,9 +75,11 @@ GET method with parameters name and rating, to get name and rating from user.
 Updates the rating column in the products table based on the "name" column's value.
 
 **BEFORE update**
+
 ![image](https://github.com/meetarthi/marlo-assignment/assets/112666126/d8d2c695-71da-4f73-99bf-d5cf1b997796)
 
 **After updating**
+
 ![image](https://github.com/meetarthi/marlo-assignment/assets/112666126/91f6090a-1cba-437b-b408-f2fe613829a6)
 ![image](https://github.com/meetarthi/marlo-assignment/assets/112666126/32cdfee1-1c56-4df0-b2ef-867f31d0eea2)
 
