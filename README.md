@@ -64,5 +64,5 @@ Calls the **insert_pd_to_sql function** to insert the DataFrame data into the pr
 
 **insert_pd_to_sql**  function inserts data from pandas dataframe into products table, iterates through each row of the dataframe and inserts into the table.
 
-------------
+------------ 
 
