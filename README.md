@@ -24,7 +24,7 @@ Web application made using Flask serves as a e-com **API**.  This allows user to
 
 **API's**
 ------------
-1. **User registration**
+1. **Registration API**
    
 Api 'register' to get the details for registration from user, GET method with parameters firstname, lastname, username, and password.
 
@@ -32,7 +32,7 @@ Inserts user information into the app_users table in a MySQL database
 ![image](https://github.com/meetarthi/marlo-assignment/assets/112666126/466f6451-aaaa-4e56-98ef-91da4d91b511)
 ![image](https://github.com/meetarthi/marlo-assignment/assets/112666126/ab740e36-ea6f-49cd-818c-ab4dff173ca2)
 ------------
-2. **User Login**
+2. **Login API**
    
 GET method with parameters username and password,to get username and password from user
 
@@ -46,15 +46,9 @@ Checks if the username is in the app_users table.
   ![image](https://github.com/meetarthi/marlo-assignment/assets/112666126/a09ed37d-fb6c-4a9f-8bea-666de5a404e5)
 
 ------------
-3. **Product Upload API**
+3.**Product Upload API**
 
-Front-end to upload product data by admin.
-
-![image](https://github.com/meetarthi/marlo-assignment/assets/112666126/30a85e7a-96a1-4899-a637-a5f8b29ae305) 
-
-------------
-
-4. **Upload the product data**
+3.1 **Upload the product data**
    
 Using POST method, uploads the csv file, reads and converts to dataframe.
 Calls the **insert_pd_to_sql function** to insert the DataFrame data into the products table in the database and returns'done'.
@@ -62,14 +56,31 @@ Calls the **insert_pd_to_sql function** to insert the DataFrame data into the pr
 ![image](https://github.com/meetarthi/marlo-assignment/assets/112666126/793cdd75-5ff3-45b8-876d-ceb4f60fc71e)
 
 ------------
-5.**Insert product data into table 'products'**
+3.2 **Insert product data into table 'products'**
 
 **insert_pd_to_sql**  function inserts data from pandas dataframe into products table, iterates through each row of the dataframe and inserts into the table.
 
 ------------ 
 
-6. **Update product rating**
+3.3 **Helper front-end**
+
+Front-end to upload product data by admin.
+
+![image](https://github.com/meetarthi/marlo-assignment/assets/112666126/30a85e7a-96a1-4899-a637-a5f8b29ae305) 
+------------ 
+
+4. **Update product rating**
 
 GET method with parameters name and rating, to get name and rating from user.
 Updates the rating column in the products table based on the "name" column's value.
+
+**BEFORE update**
+![image](https://github.com/meetarthi/marlo-assignment/assets/112666126/d8d2c695-71da-4f73-99bf-d5cf1b997796)
+
+**After updating**
+![image](https://github.com/meetarthi/marlo-assignment/assets/112666126/91f6090a-1cba-437b-b408-f2fe613829a6)
+![image](https://github.com/meetarthi/marlo-assignment/assets/112666126/32cdfee1-1c56-4df0-b2ef-867f31d0eea2)
+
+
+
 
