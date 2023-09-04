@@ -16,7 +16,7 @@ def register():
     username = request.args.get('username',type= str)
     password = request.args.get('password', type= str)
 
-    connection = pymysql.connect(host='localhost', user='Arthi', password='arthi@123', database='MarloDB', cursorclass=pymysql.cursors.DictCursor)
+    connection = pymysql.connect(host='localhost', user='USERNAME', password='PASSWORD', database='MarloDB', cursorclass=pymysql.cursors.DictCursor)
     with connection:
         with connection.cursor() as cursor:
             sql = "INSERT INTO app_users VALUES (%s, %s, %s, %s)"
@@ -32,7 +32,7 @@ def login():
     username = request.args.get('username', type= str)
     password = request.args.get('password', type= str)
 
-    connection = pymysql.connect(host='localhost', user='Arthi', password='arthi@123', database='MarloDB', cursorclass=pymysql.cursors.DictCursor)
+    connection = pymysql.connect(host='localhost', user='USERNAME', password='PASSWORD', database='MarloDB', cursorclass=pymysql.cursors.DictCursor)
     with connection:
         with connection.cursor() as cursor:
             # Read a single record
@@ -69,7 +69,7 @@ def upload():
 
 #Insert product data into table 'products'
 def insert_pd_to_sql(df):
-    connection = pymysql.connect(host='localhost', user='Arthi', password='arthi@123', database='MarloDB', cursorclass=pymysql.cursors.DictCursor)
+    connection = pymysql.connect(host='localhost', user='USERNAME', password='PASSWORD', database='MarloDB', cursorclass=pymysql.cursors.DictCursor)
     with connection:
         with connection.cursor() as cursor: 
             for row in df.iloc:
@@ -93,7 +93,7 @@ def rating():
     name = request.args.get('name', type= str)
     rating = request.args.get('rating', type= int)
 
-    connection = pymysql.connect(host='localhost', user='Arthi', password='arthi@123', database='MarloDB', cursorclass=pymysql.cursors.DictCursor)
+    connection = pymysql.connect(host='localhost', user='USERNAME', password='PASSWORD', database='MarloDB', cursorclass=pymysql.cursors.DictCursor)
     with connection:
         with connection.cursor() as cursor:
             # Read a single record
@@ -111,7 +111,7 @@ def products():
     start = 5*(page_no-1)
     end = 5*page_no
 
-    connection = pymysql.connect(host='localhost', user='Arthi', password='arthi@123', database='MarloDB', cursorclass=pymysql.cursors.DictCursor)
+    connection = pymysql.connect(host='localhost', user='USERNAME', password='PASSWORD', database='MarloDB', cursorclass=pymysql.cursors.DictCursor)
     with connection:
         with connection.cursor() as cursor:
             sql = "select * from (SELECT *, row_number() OVER (ORDER BY rating DESC) AS ranks FROM products) a WHERE ranks > %s AND ranks <= %s;"
