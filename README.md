@@ -22,7 +22,7 @@ Web application made using Flask serves as a e-com **API**.  This allows user to
 8. Develop API for user registration ,user login, uploading product data by admin, inserting the uploaded product data, enabling user to give rating, sorting review and pagination in app.py.
 9. Flask run 
 
-**Application**
+**API's**
 ------------
 1. **User registration**
    
@@ -34,8 +34,9 @@ Inserts user information into the app_users table in a MySQL database
 ------------
 2. **User Login**
    
-GET method with parameters username and password
-checks if the username is in the app_users table.
+GET method with parameters username and password,to get username and password from user
+
+Checks if the username is in the app_users table.
 - if not in table, displays 'Not registered'
   
   ![image](https://github.com/meetarthi/marlo-assignment/assets/112666126/4007a946-1de7-450f-bdb6-5998bbed1203)
@@ -45,7 +46,7 @@ checks if the username is in the app_users table.
   ![image](https://github.com/meetarthi/marlo-assignment/assets/112666126/a09ed37d-fb6c-4a9f-8bea-666de5a404e5)
 
 ------------
-3. **Helper Front-end**
+3. **Product Upload API**
 
 Front-end to upload product data by admin.
 
@@ -54,6 +55,7 @@ Front-end to upload product data by admin.
 ------------
 
 4. **Upload the product data**
+   
 Using POST method, uploads the csv file, reads and converts to dataframe.
 Calls the **insert_pd_to_sql function** to insert the DataFrame data into the products table in the database and returns'done'.
 
@@ -65,4 +67,9 @@ Calls the **insert_pd_to_sql function** to insert the DataFrame data into the pr
 **insert_pd_to_sql**  function inserts data from pandas dataframe into products table, iterates through each row of the dataframe and inserts into the table.
 
 ------------ 
+
+6. **Update product rating**
+
+GET method with parameters name and rating, to get name and rating from user.
+Updates the rating column in the products table based on the "name" column's value.
 
