@@ -52,14 +52,14 @@ def login():
 #3. Product Upload API
 #helper front-end
 @app.route('/')  
-def main():  
+def html_view():  
     return render_template("index.html")  
 
 
 
 #Upload the product data
 @app.route('/upload', methods = ['POST'])  
-def success():  
+def upload():  
     if request.method == 'POST':  
         f = request.files['file']
         f.save(f.filename) 
