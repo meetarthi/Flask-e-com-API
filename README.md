@@ -6,6 +6,11 @@ Web application made using Flask serves as a e-com **API**.  This allows user to
 ------------
 1. **Language** - Python, HTML
 
-2. **Libraries** - flask, pandas, pymysql, PyMySQL, SQLAlchemy
+2. **Libraries** - flask, pandas, pymysql
 
 3. **Database** - MySQL
+
+**Workflow**
+------------
+1. Flask installation
+2. Create folder- /
