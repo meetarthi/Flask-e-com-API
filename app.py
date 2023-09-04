@@ -7,6 +7,8 @@ import pandas as pd
 app = Flask(__name__)
 
 
+
+#1. Registration API
 @app.route('/register',methods=['GET'])
 def hello():
     firstname = request.args.get('firstname', type = str)
@@ -22,6 +24,9 @@ def hello():
         connection.commit()
     return jsonify({'INSERTED': True})
 
+
+
+#2. Login API
 @app.route('/login', methods=['GET'])
 def register():
     username = request.args.get('username', type= str)
@@ -44,12 +49,15 @@ def register():
 
 
 
-
-
+#3. Product Upload API
+#helper front-end
 @app.route('/')  
 def main():  
     return render_template("index.html")  
-  
+
+
+
+#Upload the product data
 @app.route('/upload', methods = ['POST'])  
 def success():  
     if request.method == 'POST':  
@@ -59,6 +67,7 @@ def success():
         insert_pd_to_sql(df)
     return "done"
 
+#Insert product data into table 'products'
 def insert_pd_to_sql(df):
     connection = pymysql.connect(host='localhost', user='Arthi', password='arthi@123', database='MarloDB', cursorclass=pymysql.cursors.DictCursor)
     with connection:
@@ -77,6 +86,8 @@ def insert_pd_to_sql(df):
         connection.commit()
 
 
+
+#4. Product Review API
 @app.route('/rating', methods=['GET'])
 def rating():
     name = request.args.get('name', type= str)
@@ -92,6 +103,8 @@ def rating():
     return jsonify({'rating': 'Updated'})
             
 
+
+#5. Product view Pagination API
 @app.route('/products', methods=['GET'])
 def products():
     page_no = request.args.get('page_no', type= int)
