@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 #1. Registration API
 @app.route('/register',methods=['GET'])
-def hello():
+def register():
     firstname = request.args.get('firstname', type = str)
     lastname = request.args.get('lastname', type = str)
     username = request.args.get('username',type= str)
@@ -28,7 +28,7 @@ def hello():
 
 #2. Login API
 @app.route('/login', methods=['GET'])
-def register():
+def login():
     username = request.args.get('username', type= str)
     password = request.args.get('password', type= str)
 
