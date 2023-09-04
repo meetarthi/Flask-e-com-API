@@ -36,14 +36,28 @@ Inserts user information into the app_users table in a MySQL database
    
 GET method with parameters username and password
 checks if the username is in the app_users table.
-- if not in table, prints 'Not registered'
+- if not in table, displays 'Not registered'
   
   ![image](https://github.com/meetarthi/marlo-assignment/assets/112666126/4007a946-1de7-450f-bdb6-5998bbed1203)
-- if the username is correct, and corresponds to password , prints 'logged in'
+- if the username is correct, and corresponds to password , displays 'logged in'
   ![image](https://github.com/meetarthi/marlo-assignment/assets/112666126/18409fce-093a-41ed-9ff8-cfd0514eec7f)
-- if the username is correct, but DOESN'T corresponds to password , prints 'Password incorrect'
+- if the username is correct, but DOESN'T corresponds to password , displays 'Password incorrect'
   ![image](https://github.com/meetarthi/marlo-assignment/assets/112666126/a09ed37d-fb6c-4a9f-8bea-666de5a404e5)
 
+------------
+3. **Helper Front-end**
+
+Front-end to upload product data by admin.
+
+![image](https://github.com/meetarthi/marlo-assignment/assets/112666126/30a85e7a-96a1-4899-a637-a5f8b29ae305
+
+------------
+
+4. **Upload API**
+
+If the file is successfully uploaded, it will display 'done'.
+
+![image](https://github.com/meetarthi/marlo-assignment/assets/112666126/793cdd75-5ff3-45b8-876d-ceb4f60fc71e)
 
 
 
