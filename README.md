@@ -15,13 +15,14 @@ Web application made using Flask serves as a e-com **API**.  This allows user to
 1. Flask installation
 2. Create folder- app.py
 3. SQL installation
+   
    3.1 Open sql using sudo mysql
    3.2 Create Database
    3.3 Create Table
    3.4 Create user for Admin access
-4. Grant Admin user all permission to the table.
-5. Import libraries in app.py
-6. API development
+5. Grant Admin user all permission to the table.
+6. Import libraries in app.py
+7. API development
    6.1 Create Api for user registration and login.
    6.2 Create a helper front-end to upload product data.
    6.3 Create a Api for admin to upload the product data.
