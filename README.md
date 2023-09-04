@@ -51,6 +51,7 @@ Checks if the username is in the app_users table.
 3.1 **Upload the product data**
    
 Using POST method, uploads the csv file, reads and converts to dataframe.
+
 Calls the **insert_pd_to_sql function** to insert the DataFrame data into the products table in the database and returns'done'.
 
 ![image](https://github.com/meetarthi/marlo-assignment/assets/112666126/793cdd75-5ff3-45b8-876d-ceb4f60fc71e)
@@ -72,6 +73,7 @@ Front-end to upload product data by admin.
 4. **Product Review API**
 
 GET method with parameters name and rating, to get name and rating from user.
+
 Updates the rating column in the products table based on the "name" column's value.
 
 **BEFORE update**
@@ -88,7 +90,13 @@ Updates the rating column in the products table based on the "name" column's val
 5. **Product view Pagination API**
 
 GET method with a page_no parameter to specify the page number.
-Retrieve products from the 'products' table, ordering them by rating in descending order and implementing pagination
+
+Retrieve products from the 'products' table, ordering them by rating in descending order and implementing pagination.
+
 Displays list of products for the requested page in JSON format.
+
+![image](https://github.com/meetarthi/marlo-assignment/assets/112666126/87204b66-b778-4efe-a8f2-8dba5be509ee)
+![image](https://github.com/meetarthi/marlo-assignment/assets/112666126/b35563d4-bdce-4cc6-a348-feec6fe563da)
+
 
 
