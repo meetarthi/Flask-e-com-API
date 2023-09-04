@@ -34,6 +34,7 @@ Inserts user information into the app_users table in a MySQL database
 GET method with parameters username and password
 checks if the username is in the app_users table.
 - if not in table, prints 'Not registered'
+  
   ![image](https://github.com/meetarthi/marlo-assignment/assets/112666126/4007a946-1de7-450f-bdb6-5998bbed1203)
 - if the username is correct, and corresponds to password , prints 'logged in'
   ![image](https://github.com/meetarthi/marlo-assignment/assets/112666126/18409fce-093a-41ed-9ff8-cfd0514eec7f)
